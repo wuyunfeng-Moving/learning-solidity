@@ -3,9 +3,10 @@ pragma solidity ^0.5.0;
 interface Regulator {
     function checkValue(uint amount) external returns (bool);
     function loan() external returns (bool);
-}
+}//这个接口函数可以删除，对程序没有影响
 
-contract Bank is Regulator {
+//contract Bank is Regulator {
+contract Bank{//删除接口之后，这里也需要删除
     uint private value;
     
     constructor(uint amount) public {
