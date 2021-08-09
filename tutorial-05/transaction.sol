@@ -12,7 +12,7 @@ contract Transaction {
         _;
     }
     
-    modifier validValue {
+    modifier validValue {//value是调用时在合约的value栏中填入的数字
         assert(msg.value >= 1 ether);
         _;
     }
